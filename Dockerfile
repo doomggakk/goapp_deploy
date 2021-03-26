@@ -4,7 +4,7 @@ MAINTAINER junwon,seo <jwseo@xxx.cloud>
 LABEL "purpose"="go application service deployment"
 
 WORKDIR /src/
-COPY main.go go.* /src/
+COPY ./main.go go.* /src/
 RUN CGO_ENABLED=0 go build -o /bin/demo
 
 FROM scratch
